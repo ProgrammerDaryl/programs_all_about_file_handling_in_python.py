@@ -10,4 +10,8 @@ while proceed:
         output_of_my_life_text.write(break_line)
         while proceed:
             #ask the user if he/she still wants to continue the program
-            
+            rerun = input("Are there more lines y/n? ")
+            if rerun.lower() == "y":
+                break
+            elif rerun.lower() == "n":
+                proceed = False
