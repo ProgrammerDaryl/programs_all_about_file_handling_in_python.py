@@ -16,5 +16,7 @@ def find_highest_gwa(txt_file):
                 highest_gwa = grade
         return student_name_highest_gwa, highest_gwa
 name, grade = find_highest_gwa(txt_file)
-
 # add designs to your output from pyfiglet, colorama, and Fore
+import pyfiglet
+result = pyfiglet.figlet_format(f"{name} got the highest GWA, with a GWA of {grade}" + "!", font = "bulbhead")
+print(result)
