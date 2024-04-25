@@ -5,3 +5,5 @@ with open("integers.txt", "r") as integers_file:
         number = int(number)
         # check if the integers are divisible by 2
         if number % 2 == 0:
+            #squared the even numbers
+            squared = number **2
