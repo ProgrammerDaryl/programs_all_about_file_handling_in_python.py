@@ -2,13 +2,13 @@
 # simplify your txt file for easy reading
 txt_file = (r"students_data.txt")
 def find_highest_gwa(txt_file):
-    # read the content of the students_data.txt file
+# read the content of the students_data.txt file
     with open(txt_file, "r") as students_grades:
         data = students_grades.read()
         txt_data = eval(data)
         highest_gwa = None
         student_name_highest_gwa = None
-        # adding a for loop
+# adding a for loop
         for name, grade in txt_data.items():
             decimal_number = float(grade)
             if highest_gwa is None or decimal_number > float(highest_gwa):
