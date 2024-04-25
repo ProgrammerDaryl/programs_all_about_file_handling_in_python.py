@@ -5,5 +5,7 @@ with open("numbers.txt", "r") as integers_file:
     for number in integers_file:
         # separation of even from odd numbers
         if int(number) % 2 == 0:
-# write even numbers in even.txt file
+            # write even numbers in even.txt file
+            with open("even.txt", "a") as output_of_even_numbers:
+                output_of_even_numbers.write(number)
 # write odd numbers in odd.txt file
