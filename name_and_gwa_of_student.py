@@ -8,5 +8,13 @@ def find_highest_gwa(txt_file):
         txt_data = eval(data)
         highest_gwa = None
         student_name_highest_gwa = None
-# adding a for loop
+        # adding a for loop
+        for name, grade in txt_data.items():
+            decimal_number = float(grade)
+            if highest_gwa is None or decimal_number > float(highest_gwa):
+                student_name_highest_gwa = name
+                highest_gwa = grade
+        return student_name_highest_gwa, highest_gwa
+name, grade = find_highest_gwa(txt_file)
+
 # add designs to your output from pyfiglet, colorama, and Fore
