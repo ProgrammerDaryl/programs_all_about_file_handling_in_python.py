@@ -1,5 +1,6 @@
 # create a numbers.txt file
 # read from the numbers.txt file
+with open("numbers.txt", "r") as integers_file:
 # add a for loop
 # separation of even from odd numbers
 # write even numbers in even.txt file
