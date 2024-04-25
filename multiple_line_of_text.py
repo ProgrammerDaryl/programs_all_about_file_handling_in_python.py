@@ -1,4 +1,11 @@
 # write multiple lines of text contents into a text file, named "mylife.txt"
+
+#add greetings
+import pyfiglet
+from colorama import Fore
+greetings = pyfiglet.figlet_format("Greetings Milord!", font = "slant" )
+print(Fore.CYAN + Fore.LIGHTGREEN_EX + greetings)
+
 # the user will input his/her content
 
 proceed = True
