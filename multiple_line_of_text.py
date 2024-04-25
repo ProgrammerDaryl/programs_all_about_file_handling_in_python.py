@@ -12,11 +12,11 @@ proceed = True
 while proceed:
     line = input(Fore.YELLOW + "Please enter your line here, Milord: " )
     break_line = line+("\n")
-    # txt file to show content of the multiple lines
+# txt file to show content of the multiple lines
     with open("mylife.txt", "a") as output_of_my_life_text:
         output_of_my_life_text.write(break_line)
         while proceed:
-            #ask the user if he/she still wants to continue the program
+#ask the user if he/she still wants to continue the program
             rerun = input(Fore.LIGHTGREEN_EX + "Are there any more lines you want to share, Milord y/n? ")
             if rerun.lower() == "y":
                 break
